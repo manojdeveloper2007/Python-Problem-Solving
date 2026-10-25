@@ -9,8 +9,6 @@ Test Case 1 :                               Test Case 2 :
 
 """
 
-import math
-
 
 def isPalindrome(num) -> bool:
     temp = num
@@ -26,8 +24,7 @@ def isPalindrome(num) -> bool:
 
 
 def isPrime(num) -> bool:
-    sqroot = int(math.sqrt(num))
-    for i in range(2, sqroot):
+    for i in range(2, num // 2):
         if num % i == 0:
             return False
 
